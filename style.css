@@ -1,0 +1,234 @@
+body{ margin: 0;}
+.nav {
+  list-style-type: none;
+  margin: 0;
+/*   width: 100%; */
+/*   height:30%; */
+  padding: 0;
+  overflow: hidden;
+  background-color: deepskyblue;
+  position: fixed;
+  top: 0;
+  width:  100%;
+}
+.navlist{
+ 
+}
+.navlist > li {
+ display: inline;
+/*   float: right;  */
+}
+.navlist > li a {
+  color: white;
+  padding: 14px 16px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+.navlist > li a:hover {
+  background-color: black;
+}
+@media screen and (max-width: 600px){
+  .navlist > li{float: none;}
+}
+.projects-section{
+  width: 100%;
+  height: 30px;
+  padding-top: 50px;
+  padding-bottom:300px;
+  width:100%;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  background-image: url("https://res.cloudinary.com/springboard-images/image/upload/q_auto,f_auto,fl_lossy/wordpress/2019/07/sb-blog-programming.png"); 
+  }
+.project-section {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height: 100vh;
+}
+.project-section > h1 {
+  margin-top: 2000px;
+}
+.project-section > p{
+  margin-left: 60px;
+  margin-right: 60px;
+  font-size : 3rem;
+  font-weight: 200;
+  font-style: italic;
+}
+.work-section{
+  margin-left: 200px;
+  margin-right: 200px;
+  /* background-color: #ff69b4; */
+  text-align: center;
+  padding: 10px 2px;
+}
+.work-section-header{
+  color: blue;
+  max-width: 640px;
+  margin: 0 auto 6px auto;
+  border-bottom: 1.5px solid  blue;
+}
+@media (max-width: 28.75em) {
+  .work-section-header {
+    font-size: 15rem;
+  }
+}
+.projects-grid {
+  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+/*   grid-template-columns: 50px 50px 50px; */
+  grid-gap: 30px;
+  padding: 30px;
+  width: 70%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 30.625em) {
+  .work-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.project-view {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding-bottom: 0;
+}
+  .code {
+    background-color: deepskyblue;
+  color: deepskyblue;
+  transition: color 0.3s ease-out;
+}
+.project-view:hover .code {
+  color: white;
+}
+
+.project-image {
+/*   height: calc(100% - 6.8rem); */
+/*   width: 100%;
+  object-fit: cover; */
+}
+a { 
+  text-decoration: none;
+}
+
+.project-title {
+  background-color: deepskyblue;
+  color:white;
+  font-size: 1.5rem;
+  padding: 2px 0.5px;
+  text-decoration: none;
+}
+.btn {
+  text-align: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+.btn-show-all {
+  font-size: 1.5rem;
+}
+
+.btn-show-all:hover {
+  background:deepskyblue;
+}
+
+.btn-show-all:hover > i {
+  transform: translateX(2px);
+}
+
+.btn-show-all > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+
+.contact-section {
+  color: white;
+  background-color: deepskyblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+}
+.contact-section-header > h2 {
+  font-size: 6rem;
+}
+
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+}
+
+.contact-section-header > p {
+  font-style: italic;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  color: white;
+  text-decoration: none;
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+footer {
+  width: 100%;
+  color: white;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: deepskyblue;
+  border-top: 4px solid red;
+}
+
+footer > p {
+  margin: 2rem;
+}
+
+footer i {
+  vertical-align: middle;
+}
+
+@media (max-width: 28.75em) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+footer > a {
+  color: white;
+}
